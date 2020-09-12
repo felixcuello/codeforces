@@ -1,0 +1,1 @@
+cat /app/$1.in | ruby /app/$1.rb > /app/$1.tmp
