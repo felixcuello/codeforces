@@ -1,8 +1,10 @@
-FROM debian:10.5-buster
+FROM debian:10.5
 
-RUN apt-get udpate -y
+RUN apt-get update -y
 
-RUN apt-get install gcc g++ make
+RUN apt-get install -y gcc g++ make
 
-CMD bash
+WORKDIR /app
+
+ENTRYPOINT ["bash", "cpp_run.sh"]
 
