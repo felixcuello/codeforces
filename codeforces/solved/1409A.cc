@@ -1,3 +1,6 @@
+/*
+ * https://codeforces.com/problemset/problem/1409/A
+  */
 #include <iostream>
 #include <string>
 #include <vector>
