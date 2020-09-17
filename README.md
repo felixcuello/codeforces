@@ -41,3 +41,17 @@ make clean PRG=xxxx
 
 - [The ladder](https://a2oj.com/ladders) is an organized code forces set of problems increasing in difficulty.
 
+
+## Tips&Tricks
+
+### CPP
+
+#### Debugging snippets:
+
+``` c++
+template<typename T> ostream& operator<<(ostream &os, const vector<T> &v) { os << '{'; string sep; for (const auto &x : v) os << sep << x, sep = ", "; return os << '}'; }
+template<typename T, size_t size> ostream& operator<<(ostream &os, const array<T, size> &arr) { os << '{'; string sep; for (const auto &x : arr) os << sep << x, sep = ", "; return os << '}'; }
+template<typename A, typename B> ostream& operator<<(ostream &os, const pair<A, B> &p) { return os << '(' << p.first << ", " << p.second << ')'; }
+```
+
+### Ruby
