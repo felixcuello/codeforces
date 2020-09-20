@@ -8,6 +8,9 @@ build_cpp:
 		-t competitive_programming \
 		- < cpp.Dockerfile
 
+clocal:
+	g++ -g $(PRG).cc -o $(PRG)
+
 cpp: build_cpp
 	docker run \
 		-v $$(pwd):/app \
