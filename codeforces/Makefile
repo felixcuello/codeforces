@@ -13,14 +13,14 @@ cpp: build_cpp
 		-v $$(pwd):/app \
 		-t competitive_programming \
 		$(PRG); \
-		diff $(PRG).out $(PRG).tmp
+		diff ./test_cases/$(PRG).out $(PRG).tmp
 
 ruby: build_ruby
 	docker run \
 		-v $$(pwd):/app \
 		-t competitive_programming \
 		$(PRG); \
-		diff $(PRG).out $(PRG).tmp
+		diff ./test_cases/$(PRG).out $(PRG).tmp
 
 shell:
 	docker run \
