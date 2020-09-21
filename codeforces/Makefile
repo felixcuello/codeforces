@@ -35,4 +35,5 @@ solve: clean
 	mv $(PRG).* solved/
 
 clean:
-	rm -f $(PRG) *.tmp
+	rm -rf $(PRG) *.tmp $(PRG).dSYM/
+
