@@ -1,5 +1,7 @@
 def solve(g)
+  # grid is an array which simulates to be a matrix with all the lights on
   grid = Array.new(9,1)
+  # s_adj is the array which contains in each position of it the side-adjacent's lights on the game matrix
   s_adj = Array.new
   s_adj[0] = [0,1,3]
   s_adj[1] = [0,1,2,4]
@@ -13,7 +15,9 @@ def solve(g)
 
   g.each.with_index do |t, i|
     next if t % 2 == 0
-    s_adj[i].each { |p| grid[p] == 1 ? grid[p] = 0 : grid[p] = 1 }
+    # As the times to switch the lights is odd the lights and its side-adjacents have to be toggle to the
+    # opposite state
+    s_adj[i].each { |p| grid[p] ^= 1 }
   end
 
   (0..2).each {|x| puts grid[x*3,3].join}
