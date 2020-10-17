@@ -21,11 +21,10 @@ int main() {
   }
 
   map<char, int> f;
-  for(int i=0; i<d1l; ++i)
+  for(int i=0; i<d1l; ++i) {
     ++f[d1[i]];
-
-  for(int i=0; i<d1l; ++i)
     --f[d2[i]];
+  }
 
   int diff = 0;
   for(int i=0; i<d1l; ++i) {
