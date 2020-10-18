@@ -18,6 +18,9 @@ cpp: build_cpp
 		$(PRG); \
 		diff ./test_cases/$(PRG).out $(PRG).tmp
 
+rlive:
+	ruby $(PRG).rb
+
 ruby: build_ruby
 	docker run \
 		-v $$(pwd):/app \
