@@ -7,6 +7,11 @@
 #include <math.h>
 #include <unistd.h>
 
+#define pb push_back
+#define pob push_back
+#define mp make_pair
+#define fore(i,a,b) for(int i=a,to=b;i<to;++i)
+
 typedef long long ll;
 typedef unsigned long long ull;
 
@@ -20,12 +25,18 @@ typedef unsigned long long ull;
 
 using namespace std;
 
+void solve() {
+}
+
 int main() {
 //  ifstream in;
 //  ofstream out;
 
 //  in.open("input.txt");
 //  out.open("output.txt");
+  ios::sync_with_stdio(0);
+  cin.tie(0);cout.tie(0);
+  solve();
 
   return 0;
 }
