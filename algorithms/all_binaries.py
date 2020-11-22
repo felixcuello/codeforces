@@ -9,6 +9,6 @@ def binaries(result, string, n):
 
 
 matrices = []
-binaries(matrices, "", 9)
+binaries(matrices, "", 3)
 
 print(matrices)
