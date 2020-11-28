@@ -7,6 +7,8 @@
 #include <math.h>
 #include <unistd.h>
 
+#define ceil(x,y) ((x + y - 1) / y)
+
 #define pb push_back
 #define pob push_back
 #define mp make_pair
