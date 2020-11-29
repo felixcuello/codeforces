@@ -6,6 +6,7 @@
 #include <algorithm>
 #include <math.h>
 #include <unistd.h>
+#include <limits.h>
 
 #define ceil(x,y) ((x + y - 1) / y)
 
@@ -13,6 +14,15 @@
 #define pob push_back
 #define mp make_pair
 #define fore(i,a,b) for(int i=a,to=b;i<to;++i)
+
+/* limits.h
+ * LONG_MIN   -2147483647
+ * LONG_MAX   2147483647
+ * ULONG_MAX  4294967295
+ * LLONG_MIN  -9223372036854775807
+ * LLONG_MAX  9223372036854775807
+ * ULLONG_MAX 18446744073709551615
+ */
 
 typedef long long ll;
 typedef unsigned long long ull;
