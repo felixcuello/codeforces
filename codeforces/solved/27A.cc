@@ -6,23 +6,13 @@
 #include <algorithm>
 #include <math.h>
 #include <unistd.h>
-#include <limits.h>
-/* liits.h
- * LONG_MIN   -2147483647
- * LONG_MAX   2147483647
- * ULONG_MAX  4294967295
- * LLONG_MIN  -9223372036854775807
- * LLONG_MAX  9223372036854775807
- * ULLONG_MAX 18446744073709551615
- */
 
 #define ceil(x,y) ((x + y - 1) / y)
-#define fore(i,a,b) for(int i=a,to=b;i<to;++i)
-#define __sieve(n) vector<long> __sieve_mtx(n, true); vector<long> __primes; for(long p=2; p<n;++p) { if(__sieve_mtx[p] == false) continue; __primes.push_back(p); for(long i=p*p; i<n; i+=p) __sieve_mtx[i] = false; }
 
 #define pb push_back
 #define pob push_back
 #define mp make_pair
+#define fore(i,a,b) for(int i=a,to=b;i<to;++i)
 
 typedef long long ll;
 typedef unsigned long long ull;
@@ -30,6 +20,18 @@ typedef unsigned long long ull;
 using namespace std;
 
 void solve() {
+  vector<bool> v(3002,false);
+  int n; cin >> n;
+  while(n--) {
+    int e; cin >> e;
+    v[e] = true;
+  }
+
+  for(int i=1; i<=3001; ++i)
+    if(v[i] == false) {
+      cout << i;
+      return;
+    }
 }
 
 int main() {
