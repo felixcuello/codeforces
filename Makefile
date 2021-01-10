@@ -11,6 +11,9 @@ build_cpp:
 clocal:
 	g++ -g $(PRG).cc -o $(PRG)
 
+go:
+	go run $(PRG).go
+
 cpp: build_cpp
 	docker run \
 		-v $$(pwd):/app \
