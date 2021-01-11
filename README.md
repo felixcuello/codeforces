@@ -23,6 +23,14 @@ make ruby PRG=xxxx
 make cpp PRG=xxxx
 ```
 
+#### Golang
+
+`xxxx` is your problem code or whatever filename you put to your `xxxx.rb`, `xxxx.in` and `xxxx.out`
+
+``` sh
+make go PRG=xxxx
+```
+
 
 #### After you solved it:
 
