@@ -1,7 +1,7 @@
 n = gets.to_i
 heights = gets.split(/\s/).map(&:to_i)
 
-# this boundary is set by the diff between the hights of the soldiers
+# this boundary is set by the diff between the heights of the soldiers
 min_diff = 1000-1
 ans = Array.new
 # the amount of comparisions is n-1
