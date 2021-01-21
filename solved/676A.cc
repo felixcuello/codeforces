@@ -23,9 +23,16 @@ int main() {
     }
   }
 
-  if(maxpos - minpos == n) {
-    cout << n-1; // They're in the best position, so we lose 1
+  if(maxpos - minpos == n - 1) {
+    cout << n - 1; // They're in the best position, so we lose 1
   } else {
+    int left = minpos > maxpos ? maxpos : minpos;
+    int right = minpos < maxpos ? maxpos : minpos;
+    if(left <= n - right) {
+      cout << n - left;
+    } else {
+      cout << right - 1;
+    }
   }
 
   return 0;
